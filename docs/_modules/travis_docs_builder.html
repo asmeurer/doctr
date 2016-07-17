@@ -274,7 +274,9 @@
 
 <span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">encrypted_variable</span><span class="o">=</span><span class="n">encrypted_variable</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
 
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Put</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">travis_content</span><span class="p">,</span> <span class="s2">&quot;in your .travis.yml&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Put</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">travis_content</span><span class="p">,</span> <span class="s2">&quot;in your .travis.yml.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Also make sure to create an empty gh-pages branch on GitHub, and &quot;</span>
+            <span class="s2">&quot;enable it at https://github.com/</span><span class="si">{repo}</span><span class="s2">/settings&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">repo</span><span class="o">=</span><span class="n">repo</span><span class="p">),</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
 </pre></div>
 
           </div>
