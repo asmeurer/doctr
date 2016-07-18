@@ -59,9 +59,10 @@ repo you want to build the docs for.</p>
 <p>That repo should already be setup with Travis. Additionally, you should enable
 GitHub pages for the repo. Create a <code class="docutils literal"><span class="pre">gh-pages</span></code> branch (ideally an empty one
 <strong>Note: if you do it on GitHub it will do it based on master</strong>). Go to
-<code class="docutils literal"><span class="pre">https://github.com/&lt;your</span> <span class="pre">repo&gt;/settings</span></code> and enable GitHub pages. You may also
-want to enable branch protection for the <code class="docutils literal"><span class="pre">gh-pages</span></code> branch and other branches,
-so that this script can&#8217;t accidentally screw you.</p>
+<code class="docutils literal"><span class="pre">https://github.com/&lt;your</span> <span class="pre">repo&gt;/settings</span></code> and enable GitHub pages. <strong>Make
+sure to create a file called .nojekyll in the root of the gh-pages branch.</strong>
+You may also want to enable branch protection for the <code class="docutils literal"><span class="pre">gh-pages</span></code> branch and
+other branches, so that this script can&#8217;t accidentally screw you.</p>
 <p>Then add the stuff to your <code class="docutils literal"><span class="pre">.travis.yml</span></code>. The command above will tell you a
 secure key to add. You should also have something like</p>
 <div class="code yaml highlight-default"><div class="highlight"><pre><span></span><span class="n">language</span><span class="p">:</span> <span class="n">python</span>
